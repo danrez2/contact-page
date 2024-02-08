@@ -8,20 +8,20 @@ const ContactPage = () => {
     {
       title: "Delivery",
       email: "delivery@gmail.com",
-      phone: "+254 780341267",
-      message: "+254 789065432",
+      phone: "+254 77777777",
+      message: "+254 00000000",
     },
     {
       title: "Support",
       email: "support@gmail.com",
-      phone: "+254 765890231",
-      message: "+254 756421190",
+      phone: "+254 77777777",
+      message: "+254 00000000",
     },
     {
       title: "Careers",
       email: "careers@gmail.com",
-      phone: "+254 768905413",
-      message: "+254 711748900",
+      phone: "+254 77777777",
+      message: "+254 00000000",
     },
   ];
 
@@ -46,15 +46,15 @@ const ContactPage = () => {
                 className="flex items-center mb-2"
                 href={`mailto:${info.email}`}
               >
-                <MdEmail className="mr-2 text-violet-700 transform transition-transform hover:scale-110 hover:text-violet-900" />
+                <MdEmail className="mr-2 text-violet-700 transform transition-transform hover:scale-110 hover:text-green-900" />
                 {info.email}
               </a>
               <a className="flex items-center mb-2" href={`tel:${info.phone}`}>
-                <FaPhoneAlt className="mr-2 text-violet-700" />
+                <FaPhoneAlt className="mr-2 text-violet-700 transform transition-transform hover:scale-110 hover:text-green-900"/>
                 {info.phone}
               </a>
               <a className="flex items-center" href={`sms:${info.message}`}>
-                <FaMessage className="mr-2 text-violet-700" />
+                <FaMessage className="mr-2 text-violet-700 transform transition-transform hover:scale-110 hover:text-green-900" />
                 {info.message}
               </a>
             </div>
